@@ -1,0 +1,24 @@
+import 'dart:io';
+class student
+{
+  int no=0;
+  student()
+  {
+    stdout.write("enter any positive number:");
+    no=int.parse(stdin.readLineSync()!);
+  }
+  void sqr()
+  {
+    print("square is ${no*no}\n");
+  }
+  void cube()
+  {
+    print("cube is ${no*no*no}");
+  }
+}
+void main()
+{
+  var s=student();
+  s.sqr();
+  s.cube();
+}
